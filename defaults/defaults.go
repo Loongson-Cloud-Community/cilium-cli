@@ -17,7 +17,7 @@ const (
 	AgentDaemonSetName      = "cilium"
 	AgentPodSelector        = "k8s-app=cilium"
 	AgentResourceQuota      = "cilium-resource-quota"
-	AgentImage              = "quay.io/cilium/cilium"
+	AgentImage              = "cr.loongnix.cn/cilium/cilium"
 
 	EnvoyDaemonSetName = "cilium-envoy"
 	EnvoyConfigMapName = "cilium-envoy-config"
@@ -37,9 +37,9 @@ const (
 	OperatorContainerName      = "cilium-operator"
 	OperatorDeploymentName     = "cilium-operator"
 	OperatorResourceQuota      = "cilium-operator-resource-quota"
-	OperatorImage              = "quay.io/cilium/operator-generic"
-	OperatorImageAWS           = "quay.io/cilium/operator-aws"
-	OperatorImageAzure         = "quay.io/cilium/operator-azure"
+	OperatorImage              = "cr.loongnix.cn/cilium/operator-generic"
+	OperatorImageAWS           = "cr.loongnix.cn/cilium/operator-aws"
+	OperatorImageAzure         = "cr.loongnix.cn/cilium/operator-azure"
 
 	HubbleServerSecretName = "hubble-server-certs"
 
@@ -56,8 +56,8 @@ const (
 	HubbleUIClusterRoleName    = "hubble-ui"
 	HubbleUIServiceAccountName = "hubble-ui"
 	HubbleUIDeploymentName     = "hubble-ui"
-	HubbleUIImage              = "quay.io/cilium/hubble-ui"
-	HubbleUIBackendImage       = "quay.io/cilium/hubble-ui-backend"
+	HubbleUIImage              = "cr.loongnix.cn/cilium/hubble-ui"
+	HubbleUIBackendImage       = "cr.loongnix.cn/cilium/hubble-ui-backend"
 
 	ClusterMeshDeploymentName             = "clustermesh-apiserver"
 	ClusterMeshContainerName              = "apiserver"
